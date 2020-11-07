@@ -8,7 +8,7 @@ struct A {
 };
 A a[1000],ans[1000];
 int collectOrder(int cnt) {
-	int j, k;
+	int j=0, k=0;
 	int ch = 0;
 	scanf(" %d %d", &j, &k);
 	if (j == -1 && k == -1) {
@@ -39,7 +39,7 @@ int collectOrder(int cnt) {
 }
 int main() {
 	int m=0,ansPrice=0;
-	char type, yn;
+	char type='\0', yn='\0';
 	a[0].name = "Fried Chicken";
 	a[0].price = 20;
 	a[1].name = "Sticky Rice";
@@ -59,7 +59,7 @@ int main() {
 		if (yn == 'Y') {
 			ansPrice += 10;
 		}
-		else if (type != 'Y' && type != 'N') {
+		else if (yn != 'Y' && yn != 'N') {
 			printf("Error Try Again\n");
 			return 0;
 		}
