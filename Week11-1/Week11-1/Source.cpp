@@ -84,6 +84,7 @@ int main() {
 			cout << ans[i].name << " " << ans[i].price << " Bath" << endl;
  		ansPrice += ans[i].price;
 	}
+	if (yn == 'Y') printf("Plastic Cutlery 10 Bath\n");
 	if (type == 'T') printf("Take Away\n");
 	else if (type == 'E') printf("Eat Here\n");
 	printf("----------------Net Amount----------------\n%d Bath",ansPrice);
